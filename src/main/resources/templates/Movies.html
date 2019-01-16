@@ -36,6 +36,24 @@
                  <th>specialFeatures</th>
              </tr>
         </thead>
+        <tr th:each="movie: ${movies}">
+
+            <td th:text="${movie.filmId}"></td>
+            <td th:text="${movie.title}"></td>
+            <td th:text="${movie.description}"></td>
+            <td th:text="${movie.releaseYear}"></td>
+            <td th:text="${movie.languageId}"></td>
+            <td th:text="${movie.rentalDuration}"></td>
+            <td th:text="${movie.rentalRate}"></td>
+            <td th:text="${movie.length}"></td>
+            <td th:text="${movie.replacementCost}"></td>
+            <td th:text="${movie.rating}"></td>
+            <td th:text="${movie.lastUpdate}"></td>
+            <td th:text="${movie.specialFeatures}"></td>
+            <td th:text="${movie.fulltext}"></td>
+
+
+        </tr>
     </table>
 
 
